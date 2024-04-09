@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import "./reset.css";
+
+* {
+  --background-color: white;
+  --font-color: black;
+  --primary: #EFBC9B;
+  --secondary: #FBF3D5;
+  --third: #D6DAC8;
+  --forth: #9CAFAA;
+}
+
+body {
+  height: 100vh;
+  transition: all 0.3s ease-out;
+  background-color: var(--background-color);
+  span {
+    color: var(--font-color);
+  }
+}
+
+body[data-theme="light"] {
+  --background-color: white;
+  span {
+    --font-color: var(--primary);
+  }
+  svg, img {
+    filter: none;
+  }
+}
+
+body[data-theme="dark"] {
+  --background-color: black;
+  span {
+    --font-color: var(--forth);
+  }
+  svg, img {
+    filter: invert(1);
+  }
+}

@@ -5,6 +5,7 @@ import { decrement, increment, incrementByAmount } from "../../lib/counter/count
 import { useDispatch, useSelector } from "react-redux";
 import { RootState } from "../../lib/store";
 import { useRouter } from "next/navigation";
+import Header from "@/app/header";
 
 export default function Home() {
   const count = useSelector((state: RootState) => state.counter.value)
@@ -14,13 +15,14 @@ export default function Home() {
 
   return (
     <div>
-      <h1>good</h1>
+      <Header />
+      {/* <h1>good</h1>
       <button onClick={() => router.push('leagues')}>Go League</button>
       <strong>strong</strong>
       <p>{count}</p>
       <p>{auth.id}</p>
       <button onClick={() => dispatch(increment())}>+</button>
-      <button onClick={() => dispatch(decrement())}>-</button>
+      <button onClick={() => dispatch(decrement())}>-</button> */}
     </div>
   );
 }
