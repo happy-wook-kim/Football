@@ -1,7 +1,7 @@
-'use client'
+'use client';
 
 import { useDispatch, useSelector } from "react-redux"
-import { RootState } from "../../../lib/store"
+import { RootState } from "../../../../lib/store"
 import { useRouter } from "next/navigation"
 
 export default function Leagues(){
@@ -11,7 +11,6 @@ export default function Leagues(){
 
   return (
     <div>
-      leagueㄴ
       {count}
       <button onClick={() => router.back()}>BACK</button>
     </div>
