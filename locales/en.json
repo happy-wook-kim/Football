@@ -1,8 +1,8 @@
 {
   "header": {
-    "1": "League",
-    "2": "Player",
-    "3": "Result"
+    "1": "Leagues",
+    "2": "Players",
+    "3": "Results"
   },
   "NotFoundPage": "404"
 }

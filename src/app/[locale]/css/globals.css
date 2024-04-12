@@ -17,9 +17,10 @@ body {
   height: 100vh;
   transition: all 0.3s ease-out;
   background-color: var(--background-color);
-  span {
-    color: var(--font-color);
-  }
+}
+
+body span {
+  color: var(--font-color);
 }
 
 body[data-theme="light"] {

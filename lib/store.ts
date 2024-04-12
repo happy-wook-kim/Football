@@ -1,6 +1,7 @@
 import { configureStore, ThunkAction, Action, combineReducers } from "@reduxjs/toolkit";
 import counterReducer from './counter/counterSlice'
 import authReducer from './auth/authSlice'
+import infoReducer from './info/infoSlice'
 import thunkMiddleware from 'redux-thunk'
 
 const rootReducer = combineReducers({
@@ -12,7 +13,8 @@ export const makeStore = () => {
   return configureStore({
     reducer: {
       counter: counterReducer,
-      auth: authReducer
+      auth: authReducer,
+      info: infoReducer
     },
     // middleware: (middleware: any) => middleware().concat(thunkMiddleware)
   })
