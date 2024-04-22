@@ -1,10 +1,7 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import "./css/globals.css";
 import StoreProvider from "./StorageProvider";
 import { NextIntlClientProvider, useMessages } from "next-intl";
-
-const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Football",
@@ -22,7 +19,7 @@ export default function RootLayout({
 
   return (
     <html lang={locale}>
-      <body className={inter.className}>
+      <body>
         <NextIntlClientProvider
           locale={locale}
           messages={messages}>
